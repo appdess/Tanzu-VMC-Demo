@@ -27,7 +27,8 @@ spec:
         app: mysql
     spec:
       containers:
-      - image: adess/tito-db
+      - image: harbor.cemea.vmc/library/tito-sql:v1
+        imagePullPolicy: Always
         name: mysql
         env:
           # Use secret in real usage
